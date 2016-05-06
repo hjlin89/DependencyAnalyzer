@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+  <TypeDepTable>
+    <Type Name="Analyzer">
+      <DepType Name="FileMgr">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="BuildTypesFinder">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="BuildRelationshipFinder">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="BuildDepAnal">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Analyzer">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="BuildCodeAnalyzer">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Elem">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="CmdParser">
+      <DepType Name="CmdParser">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="CreateXML">
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+      <DepType Name="XElement">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Elem">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Relationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="CreateXML">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Display">
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+      <DepType Name="Elem">
+        <relationship>Association</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Elem">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Relationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Display">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Executive">
+      <DepType Name="CmdParser">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Display">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="CreateXML">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Analyzer">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="FileMgr">
+      <DepType Name="FileMgr">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="AAction">
+      <DepType Name="IAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+    </Type>
+    <Type Name="ARule">
+      <DepType Name="IRule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Parser">
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectRelationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectLeavingScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="TestParser">
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="BuildTypesFinder">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Elem">
+        <relationship>Association</relationship>
+      </DepType>
+      <DepType Name="BuildCodeAnalyzer">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Repository">
+      <DepType Name="ScopeStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="TypeTable">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DepTable">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="AddComplexity">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DecideRelationship">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+      <DepType Name="Relationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="PushStack">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="PushLocation">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="PopStack">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="PopLocation">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="PrintFunction">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Print">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectNamespace">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectClass">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectEnum">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectDelegate">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectFunction">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectAnonymousScope">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectAnonymousScopeWithoutCurly">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectRelationship">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Elem">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectLeavingScope">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+    </Type>
+    <Type Name="BuildTypesFinder">
+      <DepType Name="Repository">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Parser">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PushStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PopStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PushLocation">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PopLocation">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="AddComplexity">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectNamespace">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectClass">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectEnum">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectFunction">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectDelegate">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectAnonymousScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectAnonymousScopeWithoutCurly">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectLeavingScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="BuildRelationshipFinder">
+      <DepType Name="Parser">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PushStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PopStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DecideRelationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectNamespace">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectClass">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectEnum">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectFunction">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectDelegate">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectAnonymousScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectAnonymousScopeWithoutCurly">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectRelationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectLeavingScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Test">
+      <DepType Name="ScopeStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="CSemiExp">
+      <DepType Name="CToker">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="CSemiExp">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="eligibleCheck">
+      <DepType Name="eligibleCheck">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="CToker">
+      <DepType Name="CToker">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DepTable">
+      <DepType Name="Dictionary">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="TypeDepElem">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="TypeTable">
+      <DepType Name="Dictionary">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="TypeElem">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Receiver">
+      <DepType Name="IService">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="BlockingQueue">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="ServiceHost">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Sender">
+      <DepType Name="BlockingQueue">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="ChannelFactory">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="App">
+      <DepType Name="Application">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="System">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="WPF_GUI">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="MainWindow">
+      <DepType Name="Window">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="TypeDepElem">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="NewMessage">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="ServiceLibrary">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="StringBuilder">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="System">
+        <relationship>Inheritance</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Resources">
+      <DepType Name="global">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="Settings">
+      <DepType Name="Settings">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="XMLWR">
+      <DepType Name="Dictionary">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="TypeDepElem">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="PushPkgDep">
+      <DepType Name="AAction">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="Repository">
+        <relationship>Association</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DetectPkgDep">
+      <DepType Name="ARule">
+        <relationship>Inheritance</relationship>
+      </DepType>
+      <DepType Name="CSsemi">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="BuildDepAnal">
+      <DepType Name="Parser">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PushStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectNamespace">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectClass">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectFunction">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectDelegate">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectAnonymousScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectLeavingScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PopStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectPkgDep">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PushPkgDep">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectRelationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DecideRelationship">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="ServerExecutive">
+      <DepType Name="Sender">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Message">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="CmdParser">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="List">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="TypeElem">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="ServerExecutive">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Receiver">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="BuildCodeAnalyzer">
+      <DepType Name="Repository">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="Parser">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PushStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectNamespace">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectClass">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectFunction">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectAnonymousScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="DetectLeavingScope">
+        <relationship>Aggregation</relationship>
+      </DepType>
+      <DepType Name="PopStack">
+        <relationship>Aggregation</relationship>
+      </DepType>
+    </Type>
+    <Type Name="DebuggerDisplayAttribute">
+      <DepType Name="Attribute">
+        <relationship>Inheritance</relationship>
+      </DepType>
+    </Type>
+  </TypeDepTable>
+  <PkgDepTable>
+    <Parent Name="FileManager">
+      <Child>CodeAnalysis</Child>
+    </Parent>
+    <Parent Name="Repositorylib">
+      <Child>CodeAnalysis</Child>
+      <Child>ServiceLibrary</Child>
+      <Child>WPF_GUI</Child>
+      <Child>XmlManager</Child>
+      <Child>DepAnalServer</Child>
+    </Parent>
+    <Parent Name="CSsemi">
+      <Child>CodeAnalysis</Child>
+      <Child>Repositorylib</Child>
+    </Parent>
+    <Parent Name="ServiceLibrary">
+      <Child>CodeAnalysis</Child>
+      <Child>CStoker</Child>
+      <Child>WPF_GUI</Child>
+      <Child>Cmd</Child>
+      <Child>DepAnalServer</Child>
+      <Child>Tokenizer</Child>
+    </Parent>
+    <Parent Name="Cmd">
+      <Child>CodeAnalysis</Child>
+    </Parent>
+    <Parent Name="CodeAnalysis">
+      <Child>CSsemi</Child>
+      <Child>myEligibleCheck</Child>
+      <Child>Repositorylib</Child>
+      <Child>Cmd</Child>
+      <Child>FileManager</Child>
+      <Child>Stack</Child>
+      <Child>DepAnalServer</Child>
+    </Parent>
+    <Parent Name="CStoker">
+      <Child>CSsemi</Child>
+      <Child>CodeAnalysis</Child>
+      <Child>Tokenizer</Child>
+    </Parent>
+    <Parent Name="Tokenizer">
+      <Child>CStoker</Child>
+    </Parent>
+    <Parent Name="DepAnalServer">
+      <Child>WPF_GUI</Child>
+    </Parent>
+    <Parent Name="XmlManager">
+      <Child>WPF_GUI</Child>
+    </Parent>
+    <Parent Name="WPF_GUI">
+      <Child>DepAnalServer</Child>
+    </Parent>
+  </PkgDepTable>
+</root>

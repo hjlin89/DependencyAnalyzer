@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+  <TypeDepTable>
+    <Type Name="type1">
+      <DepType Name="type2">
+        <relationship>Inheritance</relationship>
+      </DepType>
+    </Type>
+  </TypeDepTable>
+  <PkgDepTable>
+    <Parent Name="typeParent">
+      <Child>childtype</Child>
+    </Parent>
+  </PkgDepTable>
+</root>
